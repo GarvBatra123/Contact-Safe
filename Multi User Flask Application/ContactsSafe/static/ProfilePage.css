@@ -1,0 +1,78 @@
+/* STYLESHEET USED IN: */
+    /* 1. profilePage.html */
+
+h1{
+	text-align: center;
+}
+
+.userIcon{
+    text-align: center;
+    color: white;
+}
+
+#avatar{
+    padding: 25px;
+    font-size: 100px;
+    margin-bottom: 0%;
+    background-color: #059862;
+    border-radius: 90px;
+}
+
+.active{
+	background-color: #282A35;	
+}
+
+.active a{
+	color: #FBC02D !important;
+}
+
+#logOutDiv{
+	text-align: center;
+}
+
+#logOutButton{
+	margin-top: 30px;
+  background: #A93226;
+  border: none;
+	line-height: 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  width: 100px;
+	color: white;
+	/* text-align: center; */
+	padding: 15px 40px;
+	text-decoration: none;
+}
+
+#logOutButton:hover{
+	color: black;
+	background-color: #D98880;
+}
+
+#userName, #emailAddress{
+	margin-top: 30px;
+  background: #FBC02D;
+  border: none;
+	line-height: 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  width: 100px;
+	color: black;
+	/* text-align: center; */
+	padding: 15px 40px;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+
+#userName:hover, #emailAddress:hover{
+	background: rgb(223, 178, 65)
+}
+
+#logOutButton:hover{
+	color: white;
+	background-color: #282A35;
+}
+
+#userDetails{
+	text-align: center;
+}

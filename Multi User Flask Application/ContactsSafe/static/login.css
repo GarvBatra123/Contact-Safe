@@ -1,0 +1,99 @@
+/* CSS FILE USED IN: */
+/* 1. login.html */
+
+body{
+	font-family: poppins;
+}
+
+h1{
+  text-align: center;
+  font-size: 70px;
+  margin: 20px;
+	background: #607D8B;
+	border-radius: 10px;
+	text-transform: capitalize; 
+}
+
+h2{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 30px;
+  background-color: #282A35;
+  border: none;
+	line-height: 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 600px;
+	color: #FBC02D !important;
+}
+
+signUp h2{
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 2px;
+  background-color: #282A35;
+  border: none;
+	line-height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  width: 600px;
+	color: #FBC02D !important;
+}
+
+signUp{
+	padding-bottom: 10%;
+}
+
+form{
+  padding-bottom: 10%;
+	text-align: center;
+}
+
+
+select, input{
+  line-height: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 400px;
+}
+
+ textarea{
+	line-height: 40px;
+	height: 120px;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 400px;
+ }
+
+#submit{
+	margin-top: 30px;
+  background-color: #04AA6D;
+  border: none;
+	line-height: 40px;
+  font-size: 20px;
+  border-radius: 30px;
+  width: 400px;
+	color: white;
+}
+
+#submit:hover{
+  background-color: #059862;
+}
+
+#form_box{
+	background: #EB984E;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: #5DADE2;
+	text-decoration: none;
+}

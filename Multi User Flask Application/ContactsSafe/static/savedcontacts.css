@@ -1,0 +1,102 @@
+h1{
+  text-align: center;
+  font-size: 70px;
+  margin: 20px;
+	background: #607D8B;
+	border-radius: 10px;
+	text-transform: capitalize; 
+}
+
+#contact_box{
+	background: #EB984E;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+#contacts {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+td .fas{
+	color: red;
+}
+
+td .fas:hover{
+	color: red;
+	font-size: 22px;
+}
+
+td .fa{
+	color: green;
+}
+
+td .fa:hover{
+	font-size: 22px;
+}
+
+#contacts td, #contacts th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#contacts tr:nth-child(even){
+	background-color: black;
+	color: white;
+}
+
+#contacts tr:nth-child(even):hover {
+	background-color: grey;
+	color: white;
+}
+
+#contacts tr:nth-child(odd){
+	background-color: #282A35;
+	color: white;
+}
+
+#contacts tr:nth-child(odd):hover {
+	background-color: rgb(27, 37, 97);
+}
+
+#contacts th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+#top_bar{
+	margin-top: 10px;
+}
+
+#top_bar #left, #top_bar #right{
+	width: 20%
+}
+
+#top_bar #center{
+	width: 80%;
+}
+
+#top_bar {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+	font-size: 22px;
+}
+
+#top_bar th a{
+	/* border: 1px solid #ddd; */
+  text-align: right;
+  color: green;
+}
+
+#top_bar th a:hover{
+	text-decoration: none;
+	font-size: 30px;
+}

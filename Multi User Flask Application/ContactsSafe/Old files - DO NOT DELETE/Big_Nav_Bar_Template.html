@@ -1,0 +1,79 @@
+<!--This is the template which user will see AFTER login-->
+<!--This is the template which user will see BEFORE login-->
+{% extends "bootstrap/base.html" %}
+<!-- for the commonalities of all the html pages like the navbar, footer, title etc-->
+<!-- in case we decide to use our own styles, along with bootstrap pre-formatted styles -->
+	<head>
+		{% block styles %}
+		{{super()}}
+		<script src="https://kit.fontawesome.com/df3a797434.js" crossorigin="anonymous"></script> <!-- font Awesome template-->
+
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='ALL_Nav_Bar_Template.css') }}">
+		{% endblock %}
+
+		<title>
+		{% block title %} DEFAULT TITLE {% endblock %}
+		</title>
+	</head>
+
+	<body>
+		{% block navbar %}
+        <div id="navigation_bar">
+            <ul>				
+                {% block DROPDOWN_MENU %}
+                <li id="left" class="main"><a class="fas fa-bars"></a>
+					<ul>
+						<li><a id="red" href={{url_for('index')}}>View saved contacts</a></li>
+						<li><a id="red" href={{url_for('addcontacts')}}>Add a new contact</a></li>
+						<!-- <li><br> <br> <br> </li> -->
+						
+						<li><a id="green" href="#">About Us</a></li>
+						<li><a id="green" href="#">What is contact safe</a></li>
+						<li><a id="green" href="#">How to use</a></li>
+						<li><a id="green" href="#">Our privacy policy</a></li>
+					</ul>
+				</li>
+				{% endblock %}
+                
+				{% block HOME_PAGE %}
+				<li id="left" class="main"><a href="/landingpage" class="fas fa-house-user"></a></li>
+				{% endblock %}
+				
+                {% block LOGIN_PAGE %}
+                <li id="right" class="main"><a href="" class="fas fa-fingerprint"></a></li>
+                {% endblock %}
+
+                {% if os.path.exists('userData.json') %}
+                    {% block PROFILE_PAGE %}                
+                    <li id="right"><a href={{url_for("login")}} class="fas fa-id-card"></a></li>
+                    {% endblock %}
+                {% endif %}
+            </ul>
+        </div>
+      	{% endblock %}
+
+
+		{% block content %}
+        {{super()}}
+		
+        	{% block contentspace %}
+        	<div class="container">
+				THE CONTENT COMES HERE
+				THE CONTENT COMES HERE
+				THE CONTENT COMES HERE
+				THE CONTENT COMES HERE
+				THE CONTENT COMES HERE
+				THE CONTENT COMES HERE
+				THE CONTENT COMES HERE
+				THE CONTENT COMES HERE
+        	</div>
+        	{% endblock %}
+		
+		{% endblock %}
+		
+	</body>
+
+
+
+
