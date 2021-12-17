@@ -1,4 +1,4 @@
-# Flask-Web-Application
+# Contact Safe
 Multi-user flask application, with DB Integration
 
 This is a web-application that me and my friend had created for a school project, in our curriculum. 
